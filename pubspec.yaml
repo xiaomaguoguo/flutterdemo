@@ -2,6 +2,13 @@ name: flutterdemo
 description: A new Flutter project.
 
 dependencies:
+
+  #网络请求库
+  http: "^0.11.3+16"
+
+  #随机单词库
+  english_words: ^3.1.0
+
   flutter:
     sdk: flutter
 
