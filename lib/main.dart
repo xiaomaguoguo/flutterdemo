@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutterdemo/study/StudyList.dart';
-import 'package:flutterdemo/study/Strings.dart';
-import 'package:flutterdemo/study/NetworkList.dart';
-import 'package:flutterdemo/study/StateCount.dart';
 
 void main() => runApp(new MyApp());
 

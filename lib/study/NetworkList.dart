@@ -49,13 +49,14 @@ class ConstantListState extends State<ContentList> {
         ),
         subtitle: Text(
           '${feed.postdate} @${feed.author}',
-        ));
+        ),
+        onTap: () {});
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text(Strings.stateListTitle)),
+      appBar: AppBar(title: Text('网络请求')),
       body: new ListView.builder(
         padding: const EdgeInsets.all(13.0),
         itemCount: _items.length * 2,
