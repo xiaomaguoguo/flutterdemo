@@ -10,7 +10,7 @@ class TabbedAppBarSample extends StatelessWidget {
           appBar: new AppBar(
             title: const Text('Tabbed AppBar'),
             bottom: new TabBar(
-              isScrollable: true,
+              isScrollable: false,
               tabs: choices.map((Choice choice) {
                 return new Tab(
                   text: choice.title,

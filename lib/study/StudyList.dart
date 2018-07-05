@@ -12,6 +12,7 @@ import 'MyScaffold.dart';
 import 'ShoppingCar.dart';
 import 'ShoppingList.dart';
 import 'TabbedAppBarSample.dart';
+import 'Isolates.dart';
 
 //学习进度列表
 class StudyList extends StatefulWidget {
@@ -43,7 +44,8 @@ class StudyListState extends State<StudyList> {
       Item("MyScaffold.dart", "这是学习布局", MyAppBar()),
       Item("MyButtonGesture.dart", "手势学习", MyButtonGesture()),
       Item("ShoppingList.dart", "购物车小Demo", ShoppingList(products: d)),
-      Item("TabbedAppBarSample.dart", "Tab页面学习", TabbedAppBarSample())
+      Item("TabbedAppBarSample.dart", "Tab页面学习", TabbedAppBarSample()),
+      Item("Isolates.dart", "耗时或计算密集型任务", SampleIsolates())
     ];
     studys.forEach((item) => items.add(item));
     setState(() {
@@ -73,9 +75,9 @@ class StudyListState extends State<StudyList> {
     //以下为四种打开页面的方式，包括自定义动画
 //    Navigator.push(context, SlideRightRoute(widget: item.widget));
 //    Navigator.push(context, ScaleRoute(widget: item.widget));
-    Navigator.of(context).push(MaterialPageRoute(builder: (context) {
-      return item.widget;
-    }));
+    Navigator
+        .of(context)
+        .push(MaterialPageRoute(builder: (context) => item.widget));
 
 //    Navigator.of(context).push(PageRouteBuilder(
 //          pageBuilder: (BuildContext context, Animation<double> animation,

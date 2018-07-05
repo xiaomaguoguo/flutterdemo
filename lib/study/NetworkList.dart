@@ -8,11 +8,11 @@ import 'package:flutterdemo/beans/feed.dart';
 class ContentList extends StatefulWidget {
   @override
   State<StatefulWidget> createState() {
-    return ConstantListState();
+    return _ConstantListState();
   }
 }
 
-class ConstantListState extends State<ContentList> {
+class _ConstantListState extends State<ContentList> {
   var _items = [];
 
   @override
