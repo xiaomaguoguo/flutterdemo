@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutterdemo/study/LifecycleWatcher.dart';
 import 'package:http/http.dart';
 import 'package:flutterdemo/study/Strings.dart';
 import 'dart:convert';
@@ -45,7 +46,8 @@ class StudyListState extends State<StudyList> {
       Item("MyButtonGesture.dart", "手势学习", MyButtonGesture()),
       Item("ShoppingList.dart", "购物车小Demo", ShoppingList(products: d)),
       Item("TabbedAppBarSample.dart", "Tab页面学习", TabbedAppBarSample()),
-      Item("Isolates.dart", "耗时或计算密集型任务", SampleIsolates())
+      Item("Isolates.dart", "耗时或计算密集型任务", SampleIsolates()),
+      Item("LifecycleWatcher.dart", "页面生命周期学习", LifecycleWatcher())
     ];
     studys.forEach((item) => items.add(item));
     setState(() {

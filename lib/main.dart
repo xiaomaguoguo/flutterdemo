@@ -1,7 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutterdemo/study/StudyList.dart';
+import 'package:flutter/rendering.dart';
 
-void main() => runApp(new MyApp());
+void main() {
+  debugPaintSizeEnabled = true; //这步可以打开调试，哈哈
+//  debugPaintBaselinesEnabled = true;
+//  debugPaintPointersEnabled = true;
+  runApp(new MyApp());
+}
 
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
