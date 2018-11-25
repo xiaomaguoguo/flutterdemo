@@ -33,3 +33,16 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+
+/*void main() {
+  runApp(new MaterialApp(
+    home: new MyAppHome(), // becomes the route named '/'
+    routes: <String, WidgetBuilder> {
+      '/a': (BuildContext context) => new MyPage(title: 'page A'),
+      '/b': (BuildContext context) => new MyPage(title: 'page B'),
+      '/c': (BuildContext context) => new MyPage(title: 'page C'),
+    },
+  ));
+}*/
+
+//打开新页面： Navigator.of(context).pushNamed('/b'); 关闭当前页面可以使用 Navigator.of(context).pop(this);

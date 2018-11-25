@@ -16,7 +16,7 @@ class MyButtonGesture extends StatelessWidget {
             print('检测到点击手势了');
           },
           onDoubleTap: () {
-            print('检测到双击手势了');
+            print('检到测双击手势了');
           },
           onHorizontalDragCancel: () {
             print('水平拖拽取消了....');
